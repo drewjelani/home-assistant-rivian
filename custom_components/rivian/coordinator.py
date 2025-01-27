@@ -42,7 +42,7 @@ class RivianDataUpdateCoordinator(DataUpdateCoordinator[T], Generic[T], ABC):
     """Data update coordinator for the Rivian integration."""
 
     key: str
-    _update_interval_seconds = 30
+    _update_interval_seconds = 300
     _error_count = 0
 
     def __init__(self, hass: HomeAssistant, client: Rivian) -> None:
